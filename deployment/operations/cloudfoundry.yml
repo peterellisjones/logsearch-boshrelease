@@ -38,6 +38,7 @@
       cloudfoundry:
         user: admin
         password: "((cf_admin_password))"
+        skip_ssl_validation: true
 
 - type: replace
   path: /instance_groups/name=ingestor/jobs/name=ingestor_syslog/properties/logstash_parser/elasticsearch?/index?
